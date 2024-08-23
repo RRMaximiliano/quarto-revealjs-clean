@@ -2,7 +2,7 @@
 title: A title
 subtitle: A subtitle
 format: 
-  clean-revealjs:
+  clean-api-revealjs:
     self-contained: true
 html-math-method:
   method: mathjax
