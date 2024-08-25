@@ -178,19 +178,23 @@ $selection-bg: #26351c !default;
 }
 
 // Move "hamburger" menu button to top right
-
-.reveal .slide-menu-button {
-  position: fixed;
-  top: 6px;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  pointer-events: none;
-}
+// 
+// .reveal .slide-menu-button {
+//   position: fixed;
+//   top: 6px;
+//   right: 0;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: flex-start;
+//   pointer-events: none;
+// }
 
 .reveal .slide-menu-button > * {
   pointer-events: auto;
+}
+
+.slide-background.title-slide {
+  background-color: $accent;
 }
 
 // Same for chalkboard buttons (with an offset)

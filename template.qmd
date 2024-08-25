@@ -68,7 +68,7 @@ details [here](https://quarto.org/docs/output-formats/pdf-engine.html).
 :::
 
 
-# Components {background-color="#A51C30"}
+# Components 
 
 ## Components
 
@@ -205,7 +205,7 @@ pairs(
 )
 ```
 
-# Tables {background-color="#A51C30"}
+# Tables
 
 ## Markdown tables
 
