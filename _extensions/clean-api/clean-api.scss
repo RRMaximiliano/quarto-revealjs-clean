@@ -295,3 +295,82 @@ $selection-bg: #26351c !default;
   height: auto;
   object-fit: contain;
 }
+
+// Custom colors for boxes and other alerts
+.box-inv-crimson {
+  background-color: #FFC0DC;
+  color: #A51C30;
+  padding: 0.1em 0.4em;
+  text-align: center;
+}
+
+/* Side-by-side code/plot stuff https://www.garrickadenbuie.com/blog/decouple-code-and-output-in-xaringan-slides/ */
+.left-code {
+  color: #777;
+  width: 48%;
+  height: 92%;
+  float: left;
+}
+
+.right-plot {
+  width: 50%;
+  float: right;
+  padding-left: 1%;
+}
+
+.left-code .remark-code,
+.left-code .remark-inline-code {
+  font-size: 0.5em;
+}
+
+.small-code .remark-code,
+.small-code .remark-inline-code {
+  font-size: 0.5em;
+}
+
+// Location
+.cell-left {
+  text-align: left;
+}
+
+.cell-right {
+  text-align: right;
+}
+
+.cell-center {
+  text-align: center;
+}
+
+.v-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+// Three column layout
+.pull-left-3 {
+  float: left;
+  width: 30%;
+  padding: 0 2.5% 0 0;
+}
+
+.pull-middle-3 {
+  float: left;
+  width: 30%;
+  padding: 0 2.5%;
+}
+
+.pull-right-3 {
+  float: right;
+  width: 30%;
+  padding: 0 0 0 2.5%;
+}
+
+.pull-right-3 ~ * {
+  clear: both;
+}
