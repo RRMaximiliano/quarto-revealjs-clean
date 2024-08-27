@@ -5,8 +5,25 @@
 $jet: #131516;
 $accent: #A51C30;
 $accent2: #A51C30;
-// $accent2: #e64173;
 $right-arrow: "\2192"; // Unicode character for right arrow
+
+// FG Colors
+$my-red: #eb1e4eff;
+$my-brown: #582630ff;
+$my-yellow: #ffc847ff;
+$my-orange: #f68434ff;
+$my-off-white: #f6f6f6;
+$my-green: #1BB71Cff;
+$my-lblue: #139fecff;
+$my-blue: #252F3E;
+$my-pink: #FC2290;
+$my-lblue: #139fecff;
+$my-indigo: #771C6D;
+$my-purple:  #480B6A;
+$my-dark-text: #333333;
+$kjh-grey: #F6F6F6;
+$main-title-inverse: #252F3E;
+$chunk-background: #FCF6E6;
 
 // fonts
 
@@ -30,9 +47,10 @@ Note: This theme uses the Roboto font family, which it imports from Google
 
 $font-family-sans-serif: "Fira Sans Condensed", sans-serif !default;
 $presentation-heading-font: "Roboto Condensed", sans-serif !default;
+$font-family-monospace:  "JetBrains Mono", monospace !default;
 
 $presentation-heading-color: $jet !default;
-// $presentation-heading-font-weight: 700;
+//$presentation-heading-font-weight: 700;
 //$presentation-heading-line-height: 2;
 //$presentation-block-margin: 28px;
 $presentation-font-size-root: 32px;
@@ -74,11 +92,17 @@ $selection-bg: #26351c !default;
   }
 
   .institute,
-  .quarto-title-affiliation,
-  .quarto-title-author-email {
+  .quarto-title-affiliation {
     font-style: italic;
+    font-size: 0.6em;
     // font-size: 80%;
     // color: #7F7F7F;
+  }
+
+  .quarto-title-author-email {
+    font-family: "JetBrains Mono";
+    font-size: 0.6em;
+    color: $accent;
   }
 
   .author,
@@ -178,7 +202,7 @@ $selection-bg: #26351c !default;
 }
 
 // Move "hamburger" menu button to top right
-// 
+
 // .reveal .slide-menu-button {
 //   position: fixed;
 //   top: 6px;
@@ -301,11 +325,43 @@ $selection-bg: #26351c !default;
 }
 
 // Custom colors for boxes and other alerts
+.box-crimson {
+  background-color: #A51C30;
+}
+
 .box-inv-crimson {
   background-color: #FFC0DC;
   color: #A51C30;
   padding: 0.1em 0.4em;
   text-align: center;
+  border-radius: 0.2em;
+}
+
+.box-inv-crimson-sma {
+  background-color: #FFC0DC;
+  color: #A51C30;
+  padding: 0.1em 0.4em;
+  text-align: center;
+  font-size: 0.8em;
+  border-radius: 0.2em;
+}
+
+.box-inv-crimson-med {
+  background-color: #FFC0DC;
+  color: #A51C30;
+  padding: 0.1em 0.4em;
+  text-align: center;
+  font-size: 1.4em;
+  border-radius: 0.2em;
+}
+
+.box-inv-crimson-lar {
+  background-color: #FFC0DC;
+  color: #A51C30;
+  padding: 0.1em 0.4em;
+  text-align: center;
+  font-size: 1.6em;
+  border-radius: 0.2em;
 }
 
 /* Side-by-side code/plot stuff https://www.garrickadenbuie.com/blog/decouple-code-and-output-in-xaringan-slides/ */
@@ -377,4 +433,66 @@ $selection-bg: #26351c !default;
 
 .pull-right-3 ~ * {
   clear: both;
+}
+
+// Font sizes
+
+.huge {
+  font-size: 2.2em;
+}
+
+.large {
+  font-size: 1.7em;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.tiny {
+  font-size: 0.6em;
+}
+
+.reveal {
+  .slides {
+    .slide {
+      img+p.caption {
+        font-size: 0.5em;
+      }
+    }
+  }
+}
+
+// Color adjustments direct adjustment classes
+// From Kieran 
+.fg-yellow {
+  color: $my-yellow;
+}
+
+.fg-blue {
+  color: $my-blue;
+}
+
+.fg-lblue {
+  color: $my-lblue;
+}
+
+.fg-orange {
+  color: $my-orange;
+}
+
+.fg-red {
+  color: $my-red;
+}
+
+.fg-pink {
+  color: $my-pink;
+}
+
+.fg-offwhite {
+  color: $my-off-white;
+}
+
+.fg-green {
+  color: $my-green;
 }
