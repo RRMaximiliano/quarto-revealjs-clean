@@ -4,9 +4,9 @@ A minimalist and elegant presentation theme for Quarto Reveal.js, inspired by Ky
 [LaTex template](https://raw.githack.com/kylebutts/templates/master/latex-slides/slides.pdf). This version of the repository has been updated to match the API 209 course palette. The original template is based on Grant McDermott's work, so all kudos to him and Kyle Butts.
 
 Click the screenshot below to be taken to a
-[live demo](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html).
+[live demo](https://github.com/rrmaximiliano/quarto-revealjs-clean-demo/template.html).
 
-[![](clean-title.png "live demo")](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html)
+[![](clean-title.png "live demo")](https://github.com/RRMaximiliano/quarto-revealjs-clean-api/template.html)
 
 ## Use
 
